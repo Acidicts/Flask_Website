@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<form method="POST">
+  <h1 align='center'>Emily Quiz</h1>
+  <h2>What is {{ questions[id] }}</h2>
+    <div class="form-group">
+        <label for="answer">Answer:</label>
+        <input type="text"
+               class="form-control"
+               id="answer"
+               name="answer"
+               placeholder="Enter Answer">
+</form>
+
+{% endblock %}
